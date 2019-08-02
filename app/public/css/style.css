@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bg-cstm {
+  background-color: #49516F
+}
+
+.roundedbody {
+    border-radius: 4.25rem!important;
+}
+
+.rounded {
+    border-radius: 1rem!important;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+}
+
+.font-one {
+  font-family: 'Orbitron', sans-serif;
+}

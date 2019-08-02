@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- style.css-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <!-- bootstrap modal -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-dark">
+
+    <!-- card container -->
+    <div class="container-fluid bg-cstm roundedbody p-4 shadow">
+
+        <!-- card header -->
+        <h1 class="text-white text-center pb-4 font-one">Survey Questions</h1>
+
+        <!-- card body -->
+        <div class="card mb-3 p-3 rounded shadow">
+
+            <!-- name input -->
+            <div class="input-group pb-3 pt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Name</span>
+                    <input id="persons-name" type="text" class="form-control" placeholder="(required)">
+                </div>
+            </div>
+
+            <!-- image input -->
+            <div class="input-group pt-3 pb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Link to image</span>
+                    <input id="image-link" type="text" class="form-control" placeholder="(required)">
+                </div>
+            </div>
+            <hr>
+
+            <!-- questions div populated with jQuery -->
+            <div id="new-question"></div>
+
+        <!-- end card div -->
+        </div>
+
+        <div id="alert-div" class="text-center font-one text-warning pb-2"></div>
+        <!-- submit button -->
+        <div class="text-center font-one">
+            <button id="submitForm" type="submit" class="btn btn-primary btn-lg shadow">Submit</button>
+        </div>
+
+    <!-- end card container -->
+    </div>
+
+    <!-- links -->
+    <div class="row mt-1 justify-content-between container-fluid font-one">
+        <div class="col-3 ">
+            <a href="../api/friends" target="blank">api friends</a>
+        </div>
+        <div class="col-3 text-right">
+            <a class="text-right" href="https://github.com/NT5K/Friend-Finder" target="blank">github</a>
+        </div>
+    </div>
+
+<!-- start modal -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content bg-secondary font-one text-center text-white">
+                <div class="modal-header">
+                    <h2 class="modal-title"><strong>Your new best friend!</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <div id="matchName"></div>
+                    <img id="matchImg" src="../images/cat.jfif" width="300" alt="No image available">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/questions.js"></script>
+    <script src="../javascript/main.js"></script>
+</body>
+
+</html>
