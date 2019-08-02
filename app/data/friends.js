@@ -12,7 +12,7 @@ const friends = [
   {
     name: 'Paul',
     photo: '../images/guy2.jfif',
-    scores: [1, 5, 2, 5, 5, 1, 2, 5, 5, 5] // 36
+    scores: [1, 5, 3, 5, 5, 2, 3, 5, 5, 5] // 39
   },
   {
     name: 'Steve',

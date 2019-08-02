@@ -72,5 +72,19 @@ $('#submitForm').on('click', function (event) {
         // Show the modal with the best match 
         $("#resultsModal").modal('toggle');
         });
+
+        // clear form
+        $('#persons-name').val('')
+        $('#image-link').val('')
+        $("#Question2").val("0")
+        $("#Question1").val("0")
+        $("#Question3").val("0")
+        $("#Question4").val("0")
+        $("#Question5").val("0")
+        $("#Question6").val("0")
+        $("#Question7").val("0")
+        $("#Question8").val("0")
+        $("#Question9").val("0")
+        $("#Question10").val("0")
     };
 });
