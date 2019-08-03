@@ -17,7 +17,7 @@ const questions = [
     },
     {
         questionId: "Question 5",
-        question: "Will AI Robots take over the world?"
+        question: "Will A.I. Robots take over the world?"
     },
     {
         questionId: "Question 6",

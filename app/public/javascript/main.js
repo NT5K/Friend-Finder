@@ -32,8 +32,8 @@ $('#submitForm').on('click', function (event) {
         name: $('#persons-name').val().trim(),
         photo: $('#image-link').val().trim(),
         scores: [
-            $("#Question2").val(),
             $("#Question1").val(),
+            $("#Question2").val(),
             $("#Question3").val(),
             $("#Question4").val(),
             $("#Question5").val(),
@@ -47,8 +47,8 @@ $('#submitForm').on('click', function (event) {
 
   // validation for form
     if ($('#persons-name').val().trim() === '' || $('#image-link').val().trim() === '' || 
-        $("#Question2").val() === "0" ||
         $("#Question1").val() === "0" ||
+        $("#Question2").val() === "0" ||
         $("#Question3").val() === "0" ||
         $("#Question4").val() === "0" ||
         $("#Question5").val() === "0" ||
@@ -76,8 +76,8 @@ $('#submitForm').on('click', function (event) {
         // clear form
         $('#persons-name').val('')
         $('#image-link').val('')
-        $("#Question2").val("0")
         $("#Question1").val("0")
+        $("#Question2").val("0")
         $("#Question3").val("0")
         $("#Question4").val("0")
         $("#Question5").val("0")
