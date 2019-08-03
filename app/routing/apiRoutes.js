@@ -63,15 +63,18 @@ module.exports = function (app) {
 
     // push the user data to the friends list
     friends.push(userData);
+
+    // console message
     console.log("=======================");
     console.log("New User added:", userData.name);
-    console.log("User Score is:", sumOfUserScore);
+    console.log(userData.name, "'s", "Score is:", sumOfUserScore);
     console.log("=======================");
-    console.log("your best friend is:", bestMatch.name);
+    console.log("Your best friend is:", bestMatch.name);
     console.log("=======================");
     console.log(bestMatch.name, "'s difference in score from", userData.name, "'s is:" );
     console.log(totalDifference);
     console.log("=======================\n");
+
     // res will be used for the ajax call for the modal popup
     res.json(bestMatch);
   });
