@@ -42,4 +42,6 @@ The site is deployed onto the internet using the <a href="https://dashboard.hero
       }); `
       
 ## Example modal popup
-<img src="app/public/images/modal-example.png" width="200">
+<img src="app/public/images/modal-example.png" width="200"><br>
+
+Best friends images generated using <a href="https://thispersondoesnotexist.com/">thispersondoesnotexist.com</a>
