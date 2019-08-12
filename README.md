@@ -32,7 +32,8 @@ The site is deployed onto the internet using the <a href="https://dashboard.hero
         bestMatch.name = friends[i].name;
         bestMatch.photo = friends[i].photo;
         bestMatch.friendDifferenceScore = totalDifference;
-      }; ```
+      }; 
+      ```
     
 7. We then end the loop and push the user data to the friends list
     * `friends.push(userData);`
